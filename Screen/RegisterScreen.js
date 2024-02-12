@@ -1,5 +1,4 @@
-// Example of Splash, Login and Sign Up in React Native
-// https://aboutreact.com/react-native-login-and-signup/
+
 
 // Import React and Component
 import React, {useState, createRef} from 'react';
@@ -74,7 +73,7 @@ const RegisterScreen = (props) => {
     }
     formBody = formBody.join('&');
 
-    fetch('http://localhost:3000/api/user/register', {
+    fetch('http://10.12.1.245:3000/api/user/register', {
       method: 'POST',
       body: formBody,
       headers: {
@@ -143,7 +142,7 @@ const RegisterScreen = (props) => {
         }}>
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../Public/Image/aboutreact.png')}
+            source={require('../Public/Icon/sleep-mask.png')}
             style={{
               width: '50%',
               height: 100,

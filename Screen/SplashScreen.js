@@ -29,7 +29,7 @@ const SplashScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../Public/Image/aboutreact.png')}
+        source={require('../Public/Icon/sleep-mask.png')}
         style={{width: '90%', resizeMode: 'contain', margin: 30}}
       />
       <ActivityIndicator

@@ -1,5 +1,4 @@
-// Example of Splash, Login and Sign Up in React Native
-// https://aboutreact.com/react-native-login-and-signup/
+
 
 // Import React
 import React from 'react';
@@ -17,7 +16,7 @@ import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const homeScreenStack = ({navigation}) => {
+const HomeScreenStack = ({navigation}) => {
   return (
     <Stack.Navigator initialRouteName="HomeScreen">
       <Stack.Screen
@@ -41,7 +40,7 @@ const homeScreenStack = ({navigation}) => {
   );
 };
 
-const settingScreenStack = ({navigation}) => {
+const SettingScreenStack = ({navigation}) => {
   return (
     <Stack.Navigator
       initialRouteName="SettingsScreen"
@@ -71,25 +70,25 @@ const settingScreenStack = ({navigation}) => {
 const DrawerNavigatorRoutes = (props) => {
   return (
     <Drawer.Navigator
-      drawerContentOptions={{
-        activeTintColor: '#cee1f2',
-        color: '#cee1f2',
-        itemStyle: {marginVertical: 5, color: 'white'},
-        labelStyle: {
+      screenOptions={{
+        headerShown: false,
+        drawerActiveTintColor: '#cee1f2',
+        drawerColor: '#cee1f2',
+        drawerItemStyle: {marginVertical: 5, color: 'white'},
+        drawerLabelStyle: {
           color: '#d8d8d8',
         },
       }}
-      screenOptions={{headerShown: false}}
       drawerContent={CustomSidebarMenu}>
       <Drawer.Screen
-        name="homeScreenStack"
+        name="HomeScreenStack"
         options={{drawerLabel: 'Home Screen'}}
-        component={homeScreenStack}
+        component={HomeScreenStack}
       />
       <Drawer.Screen
-        name="settingScreenStack"
+        name="SettingScreenStack"
         options={{drawerLabel: 'Setting Screen'}}
-        component={settingScreenStack}
+        component={SettingScreenStack}
       />
     </Drawer.Navigator>
   );

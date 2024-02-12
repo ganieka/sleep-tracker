@@ -1,5 +1,4 @@
-// Example of Splash, Login and Sign Up in React Native
-// https://aboutreact.com/react-native-login-and-signup/
+
 
 // Import React and Component
 import React from 'react';
@@ -21,9 +20,9 @@ const SettingsScreen = () => {
               textAlign: 'center',
               marginBottom: 16,
             }}>
-            Example of Splash, Login and Sign Up in React Native
+            Sleep Tracker Application
             {'\n\n'}
-            This is the Settings Screen
+            Settings Screen
           </Text>
         </View>
         <Text
@@ -32,7 +31,7 @@ const SettingsScreen = () => {
             textAlign: 'center',
             color: 'grey',
           }}>
-          Splash, Login and Register Example{'\n'}React Native
+          Sleep Tracker {'\n'} using React Native
         </Text>
         <Text
           style={{
@@ -40,7 +39,7 @@ const SettingsScreen = () => {
             textAlign: 'center',
             color: 'grey',
           }}>
-          www.aboutreact.com
+          by Gani
         </Text>
       </View>
     </SafeAreaView>
